@@ -1,50 +1,5 @@
 import './style.css'
 
-// ─── CAROUSEL ───────────────────────────────────────────────
-const track  = document.getElementById('carouselTrack')
-const dots   = document.querySelectorAll('.cdot')
-const prevBtn = document.getElementById('carouselPrev')
-const nextBtn = document.getElementById('carouselNext')
-const TOTAL   = 6
-let current   = 0
-let autoTimer = null
-
-function goTo(index) {
-  current = (index + TOTAL) % TOTAL
-  track.style.transform = `translateX(-${current * 100}%)`
-  dots.forEach((d, i) => d.classList.toggle('active', i === current))
-}
-
-function next() { goTo(current + 1) }
-function prev() { goTo(current - 1) }
-
-function startAuto() {
-  autoTimer = setInterval(next, 3500)
-}
-function resetAuto() {
-  clearInterval(autoTimer)
-  startAuto()
-}
-
-prevBtn.addEventListener('click', () => { prev(); resetAuto() })
-nextBtn.addEventListener('click', () => { next(); resetAuto() })
-dots.forEach(d => d.addEventListener('click', () => {
-  goTo(Number(d.dataset.index)); resetAuto()
-}))
-
-// Touch / swipe support
-let touchStartX = 0
-const carousel = document.getElementById('heroCarousel')
-carousel.addEventListener('touchstart', e => {
-  touchStartX = e.touches[0].clientX
-}, { passive: true })
-carousel.addEventListener('touchend', e => {
-  const diff = touchStartX - e.changedTouches[0].clientX
-  if (Math.abs(diff) > 40) { diff > 0 ? next() : prev(); resetAuto() }
-}, { passive: true })
-
-startAuto()
-
 // ─── STICKY BAR ─────────────────────────────────────────────
 const bar = document.getElementById('stickyBar')
 window.addEventListener('scroll', () => {
@@ -61,3 +16,50 @@ document.querySelectorAll('details').forEach(detail => {
     }
   })
 })
+
+// ─── SCROLL REVEAL ──────────────────────────────────────────
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target
+      const delay = parseInt(el.dataset.delay || '0')
+      setTimeout(() => {
+        el.classList.add('is-visible')
+      }, delay)
+      revealObserver.unobserve(el)
+    }
+  })
+}, {
+  threshold: 0.12,
+  rootMargin: '0px 0px -50px 0px'
+})
+
+document.querySelectorAll('.reveal').forEach(el => {
+  revealObserver.observe(el)
+})
+
+// ─── PROGRESSIVE BLUR ───────────────────────────────────────
+const blurLayers = [
+  { blur: '0.25px', mask: 'linear-gradient(to bottom, transparent 0%, black 12.5%, black 25%, transparent 37.5%)' },
+  { blur: '0.5px',  mask: 'linear-gradient(to bottom, transparent 12.5%, black 25%, black 37.5%, transparent 50%)' },
+  { blur: '1px',    mask: 'linear-gradient(to bottom, transparent 25%, black 37.5%, black 50%, transparent 62.5%)' },
+  { blur: '2px',    mask: 'linear-gradient(to bottom, transparent 37.5%, black 50%, black 62.5%, transparent 75%)' },
+  { blur: '4px',    mask: 'linear-gradient(to bottom, transparent 50%, black 62.5%, black 75%, transparent 87.5%)' },
+  { blur: '8px',    mask: 'linear-gradient(to bottom, transparent 62.5%, black 75%, black 87.5%, transparent 100%)' },
+  { blur: '16px',   mask: 'linear-gradient(to bottom, transparent 75%, black 87.5%, black 100%)' },
+  { blur: '32px',   mask: 'linear-gradient(to bottom, transparent 87.5%, black 100%)' },
+]
+
+const blurContainer = document.createElement('div')
+blurContainer.className = 'progressive-blur'
+
+blurLayers.forEach(({ blur, mask }) => {
+  const layer = document.createElement('div')
+  layer.style.backdropFilter = `blur(${blur})`
+  layer.style.webkitBackdropFilter = `blur(${blur})`
+  layer.style.maskImage = mask
+  layer.style.webkitMaskImage = mask
+  blurContainer.appendChild(layer)
+})
+
+document.body.appendChild(blurContainer)
