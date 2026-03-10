@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/lp-2caf-damanh-/assets/index-5IjEVmdy.js"></script>
-  <link rel="stylesheet" crossorigin href="/lp-2caf-damanh-/assets/index-oM5a8K5t.css">
+  <script type="module" crossorigin src="/lp-2caf-damanh-/assets/index-CyRd-IyA.js"></script>
+  <link rel="stylesheet" crossorigin href="/lp-2caf-damanh-/assets/index-BlKiXL4j.css">
 </head>
 <body>
 
@@ -50,36 +50,26 @@
     </div>
 
     <div class="hero-right">
-      <!-- ─── CARROSSEL ─── -->
-      <div class="carousel-wrap">
-        <div class="carousel" id="heroCarousel">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="carousel-slide">
-              <img src="https://i.imgur.com/Y6m94Qp.png" alt="Receita 1 — Café da Manhã da Nutri" />
-            </div>
-            <div class="carousel-slide">
-              <img src="https://i.imgur.com/0xeB7js.png" alt="Receita 2 — Café da Manhã da Nutri" />
-            </div>
-            <div class="carousel-slide">
-              <img src="https://i.imgur.com/M8N3FdN.png" alt="Receita 3 — Café da Manhã da Nutri" />
-            </div>
-            <div class="carousel-slide">
-              <img src="https://i.imgur.com/6rbrkZs.png" alt="Receita 4 — Café da Manhã da Nutri" />
-            </div>
-            <div class="carousel-slide">
-              <img src="https://i.imgur.com/lVnCfip.png" alt="Receita 5 — Café da Manhã da Nutri" />
-            </div>
-            <div class="carousel-slide">
-              <img src="https://i.imgur.com/iEJiKdX.png" alt="Receita 6 — Café da Manhã da Nutri" />
-            </div>
+      <!-- ─── MOSAICO ─── -->
+      <div class="mosaic-wrap">
+        <div class="mosaic-grid">
+          <div class="mosaic-item mosaic-main">
+            <img src="https://i.imgur.com/Y6m94Qp.png" alt="Receita 1 — Café da Manhã da Nutri" />
+          </div>
+          <div class="mosaic-item">
+            <img src="https://i.imgur.com/0xeB7js.png" alt="Receita 2 — Café da Manhã da Nutri" />
+          </div>
+          <div class="mosaic-item">
+            <img src="https://i.imgur.com/M8N3FdN.png" alt="Receita 3 — Café da Manhã da Nutri" />
+          </div>
+          <div class="mosaic-item">
+            <img src="https://i.imgur.com/6rbrkZs.png" alt="Receita 4 — Café da Manhã da Nutri" />
           </div>
         </div>
-        <!-- Setas -->
-        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">&#8592;</button>
-        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Próximo">&#8594;</button>
-        <!-- Dots -->
-        <div class="carousel-dots" id="carouselDots">
-          <button class="cdot active" data-index="0"></button>
+      </div>
+      <!-- dots falso para não quebrar o JS -->
+      <div style="display:none">
+        <button class="cdot active" data-index="0"></button>
           <button class="cdot" data-index="1"></button>
           <button class="cdot" data-index="2"></button>
           <button class="cdot" data-index="3"></button>
@@ -87,7 +77,7 @@
           <button class="cdot" data-index="5"></button>
         </div>
       </div>
-      <!-- CTA mobile (abaixo do carrossel, oculto no desktop) -->
+      <!-- CTA mobile (abaixo do mosaico, oculto no desktop) -->
       <div class="hero-cta-mobile">
         <a href="#pricing" class="btn btn-primary btn-lg btn-full">QUERO AS RECEITAS! →</a>
       </div>
