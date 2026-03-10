@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/lp-2caf-damanh-/',
+  base: process.env.GITHUB_PAGES === 'true' ? '/lp-2caf-damanh-/' : '/',
 })
