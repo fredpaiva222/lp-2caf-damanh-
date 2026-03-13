@@ -179,19 +179,19 @@ body {
 /* ── BUTTONS ─────────────────────────────────────────────── */
 .btn-primary {
   display: inline-block;
-  background: var(--ink);
-  color: var(--paper);
+  background: #1a8a3c;
+  color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px 48px;
-  border: 3px solid var(--ink);
+  border: 3px solid #1a8a3c;
   cursor: pointer;
   transition: background 0.1s, color 0.1s, transform 0.1s;
 }
-.btn-primary:hover { background: var(--paper); color: var(--ink); }
+.btn-primary:hover { background: #14702f; border-color: #14702f; color: #fff; }
 .btn-primary:active { transform: translate(2px, 2px); }
 
 .btn-red {
