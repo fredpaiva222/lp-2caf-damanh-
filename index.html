@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>200 Cafés da Manhã de Nutri — Camila Moura</title>
+  <title>200 Cafés da Manhã em Vídeo — Camila Moura</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <script
     src="https://cdn.utmify.com.br/scripts/utms/latest.js"
     data-utmify-prevent-xcod-sck
@@ -25,489 +25,582 @@
 </head>
 <body>
 
-<!-- ─── HERO ─── -->
-<section class="hero dot-bg">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-badge reveal" data-reveal="up" data-delay="0">
-        <span class="badge">✦ Criado pela Nutri Camila Moura</span>
-      </div>
-      <h1 class="display reveal" data-reveal="up" data-delay="150">
-        200 Cafés<br>da <span class="display-outline">Manhã</span><br>de Nutri
-      </h1>
-      <p class="reveal" data-reveal="up" data-delay="300" style="font-size:1.2rem;font-weight:600;line-height:1.6;margin-top:20px;max-width:480px;opacity:.85;">
-        Receitas de <strong>até 350 calorias</strong> com sabor delicioso de verdade — prontas em <strong>15 minutos</strong>, com ingredientes que você já tem em casa.
-      </p>
-      <!-- CTA desktop (oculto no mobile) -->
-      <div class="hero-cta-group hero-cta-desktop reveal" data-reveal="up" data-delay="450">
-        <a href="#pricing" class="btn btn-primary btn-lg">QUERO AS RECEITAS! →</a>
-      </div>
-      <div class="hero-stats reveal" data-reveal="up" data-delay="600">
-        <div class="hero-stat">
-          <strong>200</strong>
-          <span>Receitas todas em vídeo</span>
-        </div>
-        <div class="hero-stat">
-          <strong>350</strong>
-          <span>Cal. máx.</span>
-        </div>
-        <div class="hero-stat">
-          <strong>15min</strong>
-          <span>Preparo</span>
-        </div>
-        <div class="hero-stat">
-          <strong>30 dias</strong>
-          <span>Garantia</span>
-        </div>
-      </div>
-    </div>
+<!-- GRAIN OVERLAY -->
+<div class="grain" aria-hidden="true"></div>
 
-    <div class="hero-right reveal" data-reveal="right" data-delay="300">
-      <!-- ─── MOSAICO ─── -->
-      <div class="mosaic-wrap">
-        <div class="mosaic-grid">
-          <div class="mosaic-item">
-            <img src="https://i.imgur.com/Y6m94Qp.png" alt="Receita 1 — Café da Manhã da Nutri" />
-          </div>
-          <div class="mosaic-item">
-            <img src="https://i.imgur.com/0xeB7js.png" alt="Receita 2 — Café da Manhã da Nutri" />
-          </div>
-          <div class="mosaic-item">
-            <img src="https://i.imgur.com/M8N3FdN.png" alt="Receita 3 — Café da Manhã da Nutri" />
-          </div>
-          <div class="mosaic-item">
-            <img src="https://i.imgur.com/6rbrkZs.png" alt="Receita 4 — Café da Manhã da Nutri" />
-          </div>
-        </div>
-      </div>
-      <!-- dots falso para não quebrar o JS -->
-      <div style="display:none">
-        <button class="cdot active" data-index="0"></button>
-          <button class="cdot" data-index="1"></button>
-          <button class="cdot" data-index="2"></button>
-          <button class="cdot" data-index="3"></button>
-          <button class="cdot" data-index="4"></button>
-          <button class="cdot" data-index="5"></button>
-        </div>
-      </div>
-      <!-- CTA mobile (abaixo do mosaico, oculto no desktop) -->
-      <div class="hero-cta-mobile">
-        <a href="#pricing" class="btn btn-primary btn-lg btn-full">QUERO AS RECEITAS! →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── MARQUEE ─── -->
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <div class="marquee-item">Tapioca Proteica</div>
-    <div class="marquee-item">Omelete Fit</div>
-    <div class="marquee-item">Panqueca de Banana</div>
-    <div class="marquee-item">Shake Detox</div>
-    <div class="marquee-item">Bolo de Caneca</div>
-    <div class="marquee-item">Crepioca Recheada</div>
-    <div class="marquee-item">Brownie Fit</div>
-    <div class="marquee-item">Pizza de Frigideira</div>
-    <div class="marquee-item">Sanduíche Proteico</div>
-    <div class="marquee-item">Salada de Frutas</div>
-    <!-- duplicado para loop -->
-    <div class="marquee-item">Tapioca Proteica</div>
-    <div class="marquee-item">Omelete Fit</div>
-    <div class="marquee-item">Panqueca de Banana</div>
-    <div class="marquee-item">Shake Detox</div>
-    <div class="marquee-item">Bolo de Caneca</div>
-    <div class="marquee-item">Crepioca Recheada</div>
-    <div class="marquee-item">Brownie Fit</div>
-    <div class="marquee-item">Pizza de Frigideira</div>
-    <div class="marquee-item">Sanduíche Proteico</div>
-    <div class="marquee-item">Salada de Frutas</div>
+<!-- RED TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>200 RECEITAS EM VÍDEO</span><span class="sep">///</span>
+    <span>TABELA NUTRICIONAL</span><span class="sep">///</span>
+    <span>APP ORGANIZADO</span><span class="sep">///</span>
+    <span>PRONTAS EM 10 MIN</span><span class="sep">///</span>
+    <span>CAMILA MOURA · NUTRICIONISTA</span><span class="sep">///</span>
+    <span>GARANTIA 30 DIAS</span><span class="sep">///</span>
+    <span>200 RECEITAS EM VÍDEO</span><span class="sep">///</span>
+    <span>TABELA NUTRICIONAL</span><span class="sep">///</span>
+    <span>APP ORGANIZADO</span><span class="sep">///</span>
+    <span>PRONTAS EM 10 MIN</span><span class="sep">///</span>
+    <span>CAMILA MOURA · NUTRICIONISTA</span><span class="sep">///</span>
+    <span>GARANTIA 30 DIAS</span><span class="sep">///</span>
   </div>
 </div>
 
-<!-- ─── PROBLEM VS SOLUTION ─── -->
-<section class="pvs">
-  <div class="section-inner">
-    <div class="section-label reveal" data-reveal="up" data-delay="0"><span class="badge">O problema</span></div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100">Você se identifica<br>com isso?</h2>
-    <div class="pvs-grid">
-      <div class="pvs-card pvs-problem reveal" data-reveal="left" data-delay="0">
-        <h3 style="opacity:.6;margin-bottom:8px;">❌ Sem o guia</h3>
-        <p style="font-size:.88rem;opacity:.55;margin-bottom:4px;">Sua manhã hoje...</p>
-        <ul class="pvs-list">
-          <li class="pvs-item"><span class="pvs-icon">❌</span> Falta de opções saudáveis de café da manhã</li>
-          <li class="pvs-item"><span class="pvs-icon">❌</span> Dificuldade em perder peso e se alimentar bem</li>
-          <li class="pvs-item"><span class="pvs-icon">❌</span> Receitas sem graça que você não tem vontade de fazer</li>
-          <li class="pvs-item"><span class="pvs-icon">❌</span> Sem tempo — toma café com biscoito ou pula a refeição</li>
-          <li class="pvs-item"><span class="pvs-icon">❌</span> Sem os nutrientes necessários para começar bem o dia</li>
-        </ul>
+<!-- HERO -->
+<section class="hero">
+  <p class="pre-headline reveal">
+    Você salva receita no Instagram. Salva no TikTok. Manda para você mesma no WhatsApp. Tira print. <strong>E na hora do café da manhã não encontra nenhuma e come a mesma coisa de sempre.</strong>
+  </p>
+
+  <h1 class="hero-display jitter">
+    <span class="hero-line">CHEGA</span>
+    <span class="hero-line hero-line--red">DE PERDER</span>
+    <span class="hero-line">RECEITA</span>
+    <span class="hero-line hero-line--outline">BOA.</span>
+  </h1>
+
+  <div class="hero-mosaic reveal" data-delay="100">
+    <div class="mosaic-inner">
+      <div class="mosaic-item m1"><img src="https://i.imgur.com/Y6m94Qp.png" alt="" /></div>
+      <div class="mosaic-item m2"><img src="https://i.imgur.com/0xeB7js.png" alt="" /></div>
+      <div class="mosaic-item m3"><img src="https://i.imgur.com/M8N3FdN.png" alt="" /></div>
+      <div class="mosaic-item m4"><img src="https://i.imgur.com/6rbrkZs.png" alt="" /></div>
+    </div>
+    <div class="mosaic-label">[ APP · 200 RECEITAS · VÍDEOS ]</div>
+  </div>
+
+  <p class="hero-sub reveal" data-delay="200">
+    São <strong>200 Cafés da Manhã em Vídeo</strong>, com Passo a Passo e Tabela Nutricional — Organizados no App, Sempre na Palma da Mão, Para Você Nunca Mais Repetir o Mesmo Café da Manhã e <strong>Finalmente Emagrecer de Verdade</strong>
+  </p>
+
+  <p class="hero-nosugar reveal" data-delay="350">
+    <span>// Sem dieta sofrida.</span>
+    <span>// Sem horas na cozinha.</span>
+    <span>// Sem ficar procurando vídeo que sumiu.</span>
+  </p>
+</section>
+
+<!-- DIVIDER -->
+<div class="torn-divider torn-divider--dark"></div>
+
+<!-- STORY SECTION -->
+<section class="section-dark" id="problema">
+  <div class="container">
+    <h2 class="sec-headline reveal" data-delay="100">EU PRECISO<br>TE CONTAR<br><span class="txt-red">UMA COISA.</span></h2>
+    <p class="story-text reveal" data-delay="200">
+      Você não desiste porque não tem força de vontade.
+    </p>
+    <p class="story-text story-text--big reveal" data-delay="300">
+      Você desiste porque suas receitas estão espalhadas em <strong>14 lugares diferentes</strong> — e nenhum deles é acessível às 7h da manhã quando você está com fome e com pressa.
+    </p>
+
+    <div class="problem-grid">
+      <div class="problem-card reveal" data-delay="0">
+        <span class="problem-ico">📱</span>
+        <p><strong>Instagram</strong> — Você salva. Nunca mais encontra.</p>
       </div>
-      <div class="pvs-card pvs-solution reveal" data-reveal="right" data-delay="150">
-        <h3 style="margin-bottom:8px;">✅ Com o guia</h3>
-        <p style="font-size:.88rem;opacity:.65;margin-bottom:4px;">Sua manhã com as receitas...</p>
-        <ul class="pvs-list">
-          <li class="pvs-item"><span class="pvs-icon">✅</span> Mais de 200 receitas em vídeo com passo a passo, e tabela nutricional</li>
-          <li class="pvs-item"><span class="pvs-icon">✅</span> Receitas de até 350 calorias que ajudam a emagrecer</li>
-          <li class="pvs-item"><span class="pvs-icon">✅</span> Sabor delicioso de verdade — testado e aprovado</li>
-          <li class="pvs-item"><span class="pvs-icon">✅</span> Prontas em até 15 minutos, sem utensílios especiais</li>
-          <li class="pvs-item"><span class="pvs-icon">✅</span> Proteínas e vitaminas essenciais em cada receita</li>
-        </ul>
+      <div class="problem-card reveal" data-delay="100">
+        <span class="problem-ico">💬</span>
+        <p><strong>WhatsApp</strong> — Some no meio de 300 mensagens.</p>
       </div>
+      <div class="problem-card reveal" data-delay="200">
+        <span class="problem-ico">🔖</span>
+        <p><strong>TikTok</strong> — Semanas depois não lembra qual era o perfil.</p>
+      </div>
+      <div class="problem-card reveal" data-delay="300">
+        <span class="problem-ico">🖼️</span>
+        <p><strong>Print</strong> — Some na galeria entre 500 fotos de cachorro.</p>
+      </div>
+    </div>
+
+    <div class="result-block reveal" data-delay="400">
+      <p class="result-tag">// RESULTADO:</p>
+      <p>Todo dia você abre a geladeira às 7h da manhã, o cérebro trava, e você come o mesmo pão, a mesma tapioca, o mesmo ovo mexido que come faz meses.</p>
+      <p class="result-bold">Não é culpa sua. É culpa do sistema.</p>
+      <p>As redes sociais foram feitas para te prender — não para te organizar. Você consome conteúdo infinito e não executa nenhum.</p>
     </div>
   </div>
 </section>
 
-<!-- ─── RECIPES ─── -->
-<section class="recipes" id="recipes">
-  <div class="section-inner">
-    <div class="section-label reveal" data-reveal="up" data-delay="0"><span class="badge">Veja o que você vai aprender</span></div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100">10 receitas do guia<br>(de 200 no total)</h2>
-    <p class="reveal" data-reveal="up" data-delay="200" style="font-size:1.05rem;font-weight:500;opacity:.75;margin-top:12px;">
-      Cada receita tem passo a passo, tempo de preparo e contagem de calorias.
+<div class="torn-divider torn-divider--paper"></div>
+
+<!-- SOLUTION -->
+<section class="section-paper">
+  <div class="container">
+    <h2 class="sec-headline sec-headline--dark reveal" data-delay="100">
+      IMAGINA<br>O <span class="txt-red">CONTRÁRIO.</span>
+    </h2>
+
+    <div class="solution-imgs reveal" data-delay="150">
+      <img src="https://i.imgur.com/2jjS3C3.png" alt="App Café da Manhã da Nutri" />
+      <img src="https://i.imgur.com/YIIZGEM.png" alt="App Café da Manhã da Nutri" />
+    </div>
+
+    <p class="story-text story-text--dark reveal" data-delay="200">
+      Imagina abrir um app — esse aqui, na palma da sua mão — e ter <strong>200 cafés da manhã diferentes</strong>, cada um com:
     </p>
+
+    <div class="solution-list reveal" data-delay="300">
+      <div class="sol-item">
+        <span class="sol-tag">01</span>
+        <div>
+          <strong>🎥 Vídeo passo a passo</strong>
+          <p>Você assiste, você faz. Sem dúvida, sem erro.</p>
+        </div>
+      </div>
+      <div class="sol-item">
+        <span class="sol-tag">02</span>
+        <div>
+          <strong>📊 Tabela nutricional completa</strong>
+          <p>Sabe exatamente o que está comendo.</p>
+        </div>
+      </div>
+      <div class="sol-item">
+        <span class="sol-tag">03</span>
+        <div>
+          <strong>🗂️ Tudo organizado por categoria</strong>
+          <p>Ovo, panqueca, shake, pão, frigideira, air fryer.</p>
+        </div>
+      </div>
+      <div class="sol-item">
+        <span class="sol-tag">04</span>
+        <div>
+          <strong>⚡ Prontos em menos de 10 minutos</strong>
+          <p>Com ingredientes que você já tem em casa.</p>
+        </div>
+      </div>
+      <div class="sol-item">
+        <span class="sol-tag">05</span>
+        <div>
+          <strong>✅ Aprovados por nutricionista</strong>
+          <p>Não é receita aleatória da internet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-block reveal" data-delay="400">
+      <p class="brand-tag">// ISSO É:</p>
+      <p class="brand-name jitter-subtle">CAFÉ DA MANHÃ DA NUTRI.</p>
+      <p>Não é mais um PDF com receitas. PDF você baixa, salva na pasta de downloads, e nunca mais abre. A gente sabe disso.</p>
+      <p>O Café da Manhã da Nutri é um <strong>app organizado, com receitas em vídeo</strong>, acesso imediato no celular, para você usar toda manhã como se fosse a sua nutricionista particular mostrando o passo a passo na sua cozinha.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RED TICKER 2 -->
+<div class="ticker-wrap">
+  <div class="ticker-track ticker-track--rev">
+    <span>PANQUECA DE BANANA</span><span class="sep">///</span>
+    <span>OMELETE CREMOSO</span><span class="sep">///</span>
+    <span>PIZZA DE FRIGIDEIRA</span><span class="sep">///</span>
+    <span>SHAKE DETOX</span><span class="sep">///</span>
+    <span>BROWNIE PROTEICO</span><span class="sep">///</span>
+    <span>PÃO CREMOSO</span><span class="sep">///</span>
+    <span>SANDUÍCHE PROTEICO</span><span class="sep">///</span>
+    <span>BOWL DE FRUTAS</span><span class="sep">///</span>
+    <span>PANQUECA DE BANANA</span><span class="sep">///</span>
+    <span>OMELETE CREMOSO</span><span class="sep">///</span>
+    <span>PIZZA DE FRIGIDEIRA</span><span class="sep">///</span>
+    <span>SHAKE DETOX</span><span class="sep">///</span>
+    <span>BROWNIE PROTEICO</span><span class="sep">///</span>
+    <span>PÃO CREMOSO</span><span class="sep">///</span>
+    <span>SANDUÍCHE PROTEICO</span><span class="sep">///</span>
+    <span>BOWL DE FRUTAS</span><span class="sep">///</span>
+  </div>
+</div>
+
+<!-- RECIPES -->
+<section class="section-dark" id="receitas">
+  <div class="container">
+    <h2 class="sec-headline reveal" data-delay="100">10 RECEITAS<br><span class="txt-red">DO APP.</span></h2>
+    <p class="sec-note reveal" data-delay="150">( de 200 no total — cada uma com vídeo, tabela nutricional e passo a passo )</p>
+
     <div class="recipes-grid">
-      <div class="recipe-card reveal" data-reveal="up" data-delay="0">
-        <div class="rc-img"><img src="https://i.imgur.com/ZEtQRwM.jpeg" alt="Café de Frigideira com Ovos e Frios" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">10 min</span><span class="rc-tag">195 cal</span></div>
-          <div class="rc-name">Café de Frigideira com Ovos e Frios</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="0">
+        <div class="rc-img"><img src="https://i.imgur.com/ZEtQRwM.jpeg" alt="Café de Frigideira com Ovos" /></div>
+        <div class="rc-tags"><span>10 MIN</span><span>195 CAL</span></div>
+        <p class="rc-name">Café de Frigideira com Ovos e Frios</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="100">
-        <div class="rc-img"><img src="https://i.imgur.com/lVnCfip.png" alt="Pizza Rápida de Frigideira" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">3 ingredientes</span><span class="rc-tag">207 cal</span></div>
-          <div class="rc-name">Pizza Rápida de Frigideira</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="60">
+        <div class="rc-img"><img src="https://i.imgur.com/lVnCfip.png" alt="Pizza Fit de Frigideira" /></div>
+        <div class="rc-tags"><span>3 INGREDIENTES</span><span>207 CAL</span></div>
+        <p class="rc-name">Pizza Fit de Frigideira</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="200">
-        <div class="rc-img"><img src="https://i.imgur.com/TRUKYMI.jpeg" alt="Panqueca Fit de Banana" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">7 min</span><span class="rc-tag">183 cal</span></div>
-          <div class="rc-name">Panqueca Fit de Banana</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="120">
+        <div class="rc-img"><img src="https://i.imgur.com/TRUKYMI.jpeg" alt="Panqueca de Banana" /></div>
+        <div class="rc-tags"><span>7 MIN</span><span>183 CAL</span></div>
+        <p class="rc-name">Panqueca Fit de Banana</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="0">
-        <div class="rc-img"><img src="https://i.imgur.com/HFfCGD4.png" alt="Omelete de Frios Tostada" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">9 min</span><span class="rc-tag">125 cal</span></div>
-          <div class="rc-name">Omelete de Frios Tostada</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="0">
+        <div class="rc-img"><img src="https://i.imgur.com/HFfCGD4.png" alt="Omelete Cremoso" /></div>
+        <div class="rc-tags"><span>9 MIN</span><span>125 CAL</span></div>
+        <p class="rc-name">Omelete Cremoso Proteico</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="100">
-        <div class="rc-img"><img src="https://i.imgur.com/RStrmsM.png" alt="Salada de Frutas Digestivas" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">6 frutas</span><span class="rc-tag">120 cal</span></div>
-          <div class="rc-name">Salada de Frutas Digestivas</div>
-        </div>
-      </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="200">
+      <div class="recipe-card reveal" data-delay="60">
         <div class="rc-img"><img src="https://i.imgur.com/bHYknJP.png" alt="Pão Cremoso Gratinado" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">8 min</span><span class="rc-tag">170 cal</span></div>
-          <div class="rc-name">Pão Cremoso Gratinado</div>
-        </div>
+        <div class="rc-tags"><span>8 MIN</span><span>170 CAL</span></div>
+        <p class="rc-name">Pão Cremoso Gratinado</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="0">
-        <div class="rc-img"><img src="https://i.imgur.com/pPUEZFh.png" alt="Shakes Detox Saborosos" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">6 min</span><span class="rc-tag">120 cal</span></div>
-          <div class="rc-name">Shakes Detox Saborosos</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="120">
+        <div class="rc-img"><img src="https://i.imgur.com/pPUEZFh.png" alt="Shake Detox" /></div>
+        <div class="rc-tags"><span>6 MIN</span><span>120 CAL</span></div>
+        <p class="rc-name">Shake Detox Saboroso</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="100">
-        <div class="rc-img"><img src="https://i.imgur.com/2wVXk1G.png" alt="Bolo de Banana de Caneca" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">3 ingredientes</span><span class="rc-tag">175 cal</span></div>
-          <div class="rc-name">Bolo de Banana de Caneca</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="0">
+        <div class="rc-img"><img src="https://i.imgur.com/RStrmsM.png" alt="Bowl de Frutas" /></div>
+        <div class="rc-tags"><span>6 FRUTAS</span><span>120 CAL</span></div>
+        <p class="rc-name">Bowl de Frutas com Iogurte</p>
       </div>
-      <div class="recipe-card reveal" data-reveal="up" data-delay="200">
-        <div class="rc-img"><img src="https://i.imgur.com/fowzeQI.png" alt="Sanduíche Proteico de Frigideira" /></div>
-        <div class="rc-body">
-          <div class="rc-meta-row"><span class="rc-tag">10 min</span><span class="rc-tag">180 cal</span></div>
-          <div class="rc-name">Sanduíche Proteico de Frigideira</div>
-        </div>
+      <div class="recipe-card reveal" data-delay="60">
+        <div class="rc-img"><img src="https://i.imgur.com/2wVXk1G.png" alt="Brownie Proteico" /></div>
+        <div class="rc-tags"><span>10 MIN</span><span>160 CAL</span></div>
+        <p class="rc-name">Brownie Proteico de Frigideira</p>
+      </div>
+      <div class="recipe-card reveal" data-delay="120">
+        <div class="rc-img"><img src="https://i.imgur.com/fowzeQI.png" alt="Sanduíche Proteico" /></div>
+        <div class="rc-tags"><span>10 MIN</span><span>180 CAL</span></div>
+        <p class="rc-name">Sanduíche Proteico</p>
       </div>
     </div>
-    <div style="text-align:center;margin-top:40px;">
-      <span class="badge badge-dark" style="font-size:.9rem;padding:12px 24px;border-radius:12px;">
-        + 190 outras receitas da nutri dentro do guia!
-      </span>
+
+    <div class="more-tag reveal" data-delay="200">
+      <span>+ 190 outras receitas em vídeo dentro do app</span>
     </div>
   </div>
 </section>
 
-<!-- ─── HOW IT WORKS ─── -->
-<section class="how">
-  <div class="section-inner">
-    <div class="section-label reveal" data-reveal="up" data-delay="0"><span class="badge badge-yellow">Como funciona</span></div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100">Simples assim</h2>
+<div class="torn-divider torn-divider--paper"></div>
+
+<!-- HOW IT WORKS -->
+<section class="section-paper">
+  <div class="container">
+    <h2 class="sec-headline sec-headline--dark reveal" data-delay="100">SIMPLES<br><span class="txt-red">ASSIM.</span></h2>
+
     <div class="how-steps">
-      <div class="how-step reveal" data-reveal="up" data-delay="0">
-        <div class="step-circle sc-1">1</div>
-        <div class="step-title">Compre o guia</div>
-        <div class="step-desc">Acesso imediato após o pagamento. Receba no e-mail e WhatsApp em segundos.</div>
+      <div class="how-step reveal" data-delay="0">
+        <div class="step-n">01</div>
+        <h3>Garanta seu acesso</h3>
+        <p>Acesso imediato após o pagamento — receba por e-mail e WhatsApp em segundos.</p>
       </div>
-      <div class="how-step reveal" data-reveal="up" data-delay="150">
-        <div class="step-circle sc-2">2</div>
-        <div class="step-title">Abra o APP e escolha a receita</div>
-        <div class="step-desc">Abra o guia, escolha entre 200+ opções organizadas por categoria e calorias.</div>
+      <div class="how-step reveal" data-delay="150">
+        <div class="step-n">02</div>
+        <h3>Abra o app e escolha</h3>
+        <p>200+ opções organizadas por categoria. Você abre, escolhe e já sabe o que vai fazer.</p>
       </div>
-      <div class="how-step reveal" data-reveal="up" data-delay="300">
-        <div class="step-circle sc-3">3</div>
-        <div class="step-title">Faça em 15 min</div>
-        <div class="step-desc">Siga o passo a passo com ingredientes simples. Sem batedeira, sem complicação.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── BONUSES ─── -->
-<section class="bonuses">
-  <div class="section-inner">
-    <div class="section-label reveal" data-reveal="up" data-delay="0"><span class="badge">🎁 Bônus exclusivos</span></div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100">3 bônus grátis<br>hoje na sua compra</h2>
-    <div class="bonuses-grid">
-      <div class="bonus-card reveal" data-reveal="up" data-delay="0">
-        <div class="bonus-num">1</div>
-        <div class="bonus-img"><img src="https://i.imgur.com/YCE104x.png" alt="200 Sobremesas Zero Açúcar" /></div>
-        <div class="bonus-badge"><span class="badge" style="font-size:.7rem;">Bônus #1</span></div>
-        <div class="bonus-name">200 Sobremesas Zero Açúcar</div>
-        <div class="bonus-orig">Valor: R$ 29,00</div>
-        <div class="bonus-free">GRÁTIS hoje</div>
-      </div>
-      <div class="bonus-card reveal" data-reveal="up" data-delay="150">
-        <div class="bonus-num">2</div>
-        <div class="bonus-img"><img src="https://i.imgur.com/Jadxdnq.png" alt="30 Marmitas Fit para Congelar" /></div>
-        <div class="bonus-badge"><span class="badge" style="font-size:.7rem;">Bônus #2</span></div>
-        <div class="bonus-name">30 Marmitas Fit para Congelar</div>
-        <div class="bonus-orig">Valor: R$ 15,00</div>
-        <div class="bonus-free">GRÁTIS hoje</div>
-      </div>
-      <div class="bonus-card reveal" data-reveal="up" data-delay="300">
-        <div class="bonus-num">3</div>
-        <div class="bonus-img"><img src="https://i.imgur.com/pPUEZFh.png" alt="60 Sucos Detox" /></div>
-        <div class="bonus-badge"><span class="badge badge-yellow" style="font-size:.7rem;">Bônus #3</span></div>
-        <div class="bonus-name">60 Sucos Detox</div>
-        <div class="bonus-orig" style="color:rgba(255,255,255,.4);">Valor: R$ 29,00</div>
-        <div class="bonus-free">GRÁTIS hoje</div>
+      <div class="how-step reveal" data-delay="300">
+        <div class="step-n">03</div>
+        <h3>Assista e faça em 10 min</h3>
+        <p>Siga o vídeo passo a passo com ingredientes simples que você já tem em casa.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── TESTIMONIALS ─── -->
-<section class="testimonials">
-  <div class="section-inner">
-    <div class="section-label reveal" data-reveal="up" data-delay="0"><span class="badge">Depoimentos reais</span></div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100">Quem já tem,<br>ama de verdade</h2>
-    <div class="testi-mosaic">
-      <div class="testi-img-item reveal" data-reveal="up" data-delay="0">
-        <img src="https://i.imgur.com/8h76VQi.png" alt="Depoimento 1" />
-      </div>
-      <div class="testi-img-item reveal" data-reveal="up" data-delay="100">
-        <img src="https://i.imgur.com/GMvBV3J.png" alt="Depoimento 2" />
-      </div>
-      <div class="testi-img-item reveal" data-reveal="up" data-delay="0">
-        <img src="https://i.imgur.com/uFbwmrm.png" alt="Depoimento 3" />
-      </div>
-      <div class="testi-img-item reveal" data-reveal="up" data-delay="100">
-        <img src="https://i.imgur.com/4jfl5FB.png" alt="Depoimento 4" />
-      </div>
-      <div class="testi-img-item reveal" data-reveal="up" data-delay="0">
-        <img src="https://i.imgur.com/X99LWxI.png" alt="Depoimento 5" />
-      </div>
-      <div class="testi-img-item reveal" data-reveal="up" data-delay="100">
-        <img src="https://i.imgur.com/jG4bca6.png" alt="Depoimento 6" />
-      </div>
-    </div>
-  </div>
-</section>
+<div class="torn-divider torn-divider--dark"></div>
 
-<!-- ─── DELIVERY ─── -->
-<section class="delivery">
-  <div class="section-inner">
-    <div class="section-label reveal" data-reveal="up" data-delay="0"><span class="badge">Acesso em qualquer lugar</span></div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100">Receba agora<br>e use onde quiser</h2>
-    <div class="delivery-grid">
-      <div class="delivery-card reveal" data-reveal="up" data-delay="0">
-        <div class="delivery-icon">📧</div>
-        <h4>E-mail e WhatsApp</h4>
+<!-- CREATOR -->
+<section class="section-dark">
+  <div class="container">
+    <div class="creator-wrap">
+      <div class="creator-img reveal">
+        <img src="https://i.imgur.com/RvlaSD5.png" alt="Camila Moura, Nutricionista" />
+        <div class="creator-stamp">NUTRI</div>
       </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="50">
-        <div class="delivery-icon">📱</div>
-        <h4>Celular</h4>
-      </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="100">
-        <div class="delivery-icon">💻</div>
-        <h4>Computador</h4>
-      </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="150">
-        <div class="delivery-icon">🖨️</div>
-        <h4>Imprimir no papel</h4>
-      </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="0">
-        <div class="delivery-icon">📟</div>
-        <h4>Tablet</h4>
-      </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="50">
-        <div class="delivery-icon">🔄</div>
-        <h4>Novas receitas mensalmente</h4>
-      </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="100">
-        <div class="delivery-icon">♻️</div>
-        <h4>Perdeu? Reenviamos!</h4>
-      </div>
-      <div class="delivery-card reveal" data-reveal="up" data-delay="150" style="background:var(--dark);border-color:#000;">
-        <div class="delivery-icon">⚡</div>
-        <h4 style="color:#fff;">Acesso imediato</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── PRICING ─── -->
-<section class="pricing" id="pricing">
-  <div class="section-inner">
-    <div class="section-label" style="text-align:center;display:flex;justify-content:center;">
-      <span class="badge badge-yellow">Oferta por tempo limitado</span>
-    </div>
-    <h2 class="section-title reveal" data-reveal="up" data-delay="100" style="text-align:center;">Garanta seu acesso<br>ainda hoje</h2>
-    <div class="pricing-inner">
-      <div class="price-box dot-bg reveal" data-reveal="up" data-delay="200">
-        <div class="price-badge-wrap">
-          <span class="badge" style="font-size:.75rem;">
-            200 Cafés da Manhã + 3 Bônus Grátis
-          </span>
-        </div>
-        <div class="price-mockup">
-          <img src="https://i.imgur.com/0LDJWQM.png" alt="Mockup — 200 Cafés da Manhã de Nutri" />
-        </div>
-        <p class="price-original">De R$ 129,00</p>
-        <div class="price-value">
-          <sup>R$</sup>29<small>,90</small>
-        </div>
-        <p class="price-or">ou em</p>
-        <p class="price-installment">6x de R$ 5,69</p>
-        <ul class="price-perks">
-          <li><span class="perk-check">✓</span> 200 Cafés da Manhã de Nutri (com sabor)</li>
-          <li><span class="perk-check">✓</span> Receitas de até 350 calorias com passo a passo</li>
-          <li><span class="perk-check">✓</span> Prontas em até 15 minutos</li>
-          <li><span class="perk-check">✓</span> <strong>Bônus #1:</strong> 200 Sobremesas Zero Açúcar</li>
-          <li><span class="perk-check">✓</span> <strong>Bônus #2:</strong> 30 Marmitas Fit para Congelar</li>
-          <li><span class="perk-check">✓</span> <strong>Bônus #3:</strong> 60 Sucos Detox</li>
-          <li><span class="perk-check">✓</span> Novas receitas mensalmente</li>
-          <li><span class="perk-check">✓</span> Garantia de 30 dias — dinheiro de volta</li>
-        </ul>
-        <div class="price-cta">
-          <a href="https://lastlink.com/p/C3DC54870/checkout-payment/" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-full">
-            QUERO AS RECEITAS AGORA! →
-          </a>
-        </div>
-        <div class="price-secure">
-          <span>🔒</span>
-          <span>Pagamento 100% seguro · PIX, Cartão e Boleto</span>
+      <div class="creator-text">
+        <h2 class="sec-headline reveal" data-delay="100">CAMILA<br>MOURA,<br><span class="txt-red">NUTRI.</span></h2>
+        <p class="story-text reveal" data-delay="200">Nutricionista desde 2017, com pós-graduação em alimentação saudável do dia a dia e <strong>mais de 390 mil seguidores</strong> que acompanham seu conteúdo diariamente.</p>
+        <p class="story-text reveal" data-delay="300">Cada uma das 200 receitas foi testada, validada nutricionalmente e gravada em vídeo para que você nunca tenha dúvida de como fazer.</p>
+        <div class="creator-numbers reveal" data-delay="400">
+          <div><strong>390K+</strong><span>SEGUIDORES</span></div>
+          <div><strong>2017</strong><span>NUTRI DESDE</span></div>
+          <div><strong>200</strong><span>RECEITAS</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── GUARANTEE ─── -->
-<section class="guarantee">
-  <div class="guarantee-box reveal" data-reveal="up" data-delay="0">
-    <div class="guarantee-shield">🛡️</div>
-    <h2>Devolvemos seu dinheiro<br>e você fica com o produto!</h2>
-    <p>Teste por 30 dias. Se por qualquer motivo você não amar as receitas, devolvemos 100% do seu dinheiro na hora — e você ainda fica com tudo que baixou. O risco é 100% nosso.</p>
-    <a href="#pricing" class="btn btn-yellow btn-lg">Quero garantir o meu →</a>
-  </div>
-</section>
+<div class="torn-divider torn-divider--paper"></div>
 
-<!-- ─── FAQ ─── -->
-<section class="faq">
-  <div class="section-inner" style="text-align:center;">
-    <div class="section-label" style="display:flex;justify-content:center;">
-      <span class="badge">Dúvidas frequentes</span>
+<!-- TESTIMONIALS -->
+<section class="section-paper">
+  <div class="container">
+    <h2 class="sec-headline sec-headline--dark reveal" data-delay="100">QUEM JÁ TEM,<br><span class="txt-red">AMA.</span></h2>
+
+    <div class="testi-grid">
+      <div class="testi-item reveal" data-delay="0"><img src="https://i.imgur.com/8h76VQi.png" alt="Depoimento 1" /></div>
+      <div class="testi-item reveal" data-delay="80"><img src="https://i.imgur.com/GMvBV3J.png" alt="Depoimento 2" /></div>
+      <div class="testi-item reveal" data-delay="160"><img src="https://i.imgur.com/uFbwmrm.png" alt="Depoimento 3" /></div>
+      <div class="testi-item reveal" data-delay="0"><img src="https://i.imgur.com/4jfl5FB.png" alt="Depoimento 4" /></div>
+      <div class="testi-item reveal" data-delay="80"><img src="https://i.imgur.com/X99LWxI.png" alt="Depoimento 5" /></div>
+      <div class="testi-item reveal" data-delay="160"><img src="https://i.imgur.com/jG4bca6.png" alt="Depoimento 6" /></div>
     </div>
-    <h2 class="section-title">Perguntas & Respostas</h2>
-  </div>
-  <div class="faq-list">
-    <details class="faq-item reveal" data-reveal="up" data-delay="0">
-      <summary class="faq-q">As receitas têm mesmo sabor de verdade?</summary>
-      <p class="faq-a">Sim! O maior foco da nutri Camila foi unir saúde com sabor de verdade. Nada de comida sem graça — são receitas realmente gostosas, testadas e aprovadas.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="50">
-      <summary class="faq-q">São receitas saudáveis?</summary>
-      <p class="faq-a">Todas são saudáveis, equilibradas e pensadas para oferecer os nutrientes e vitaminas que seu corpo precisa para começar bem o dia. Cada receita tem até 350 calorias.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="100">
-      <summary class="faq-q">As receitas servem para a família toda?</summary>
-      <p class="faq-a">Com certeza! São ideias que agradam adultos e crianças, com ingredientes acessíveis e muito sabor.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="150">
-      <summary class="faq-q">As receitas são fáceis de fazer?</summary>
-      <p class="faq-a">Sim! A maioria é simples, com ingredientes acessíveis e instruções claras, perfeitas para o dia a dia corrido. Você não precisa saber cozinhar para aproveitar.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="200">
-      <summary class="faq-q">Preciso de utensílios especiais?</summary>
-      <p class="faq-a">Não! As receitas foram pensadas para o dia a dia, usando utensílios simples que você já tem em casa, como colher, garfo, liquidificador e frigideira.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="250">
-      <summary class="faq-q">Os ingredientes são caros ou difíceis de encontrar?</summary>
-      <p class="faq-a">Não. A nutri priorizou ingredientes que você encontra com facilidade em mercados comuns, sem precisar de produtos caros ou importados.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="300">
-      <summary class="faq-q">Como vou receber o guia?</summary>
-      <p class="faq-a">Após a confirmação do pagamento você recebe no e-mail e WhatsApp imediatamente. Funciona em celular, tablet, computador e pode imprimir também.</p>
-    </details>
-    <details class="faq-item reveal" data-reveal="up" data-delay="350">
-      <summary class="faq-q">Como funciona a garantia?</summary>
-      <p class="faq-a">Você tem 30 dias para testar. Se não gostar por qualquer motivo, devolvemos 100% do seu dinheiro e você ainda fica com o produto. Sem burocracia, sem perguntas.</p>
-    </details>
   </div>
 </section>
 
-<!-- ─── FINAL CTA ─── -->
-<section class="final-cta dot-bg">
-  <div class="final-cta-inner reveal" data-reveal="up" data-delay="0">
-    <span class="badge badge-dark" style="margin-bottom:24px;">Última chamada</span>
-    <h2 class="section-title">Sua manhã pode ser<br>diferente já amanhã</h2>
-    <p>Enquanto você lê isso, outras pessoas já estão aproveitando as receitas. Não deixe a manhã de amanhã ser igual à de hoje.</p>
-    <a href="#pricing" class="btn btn-primary btn-lg">
-      QUERO AS RECEITAS POR R$29,90 →
-    </a>
-    <p style="margin-top:16px;font-size:.8rem;font-weight:700;opacity:.6;">
-      🔒 Garantia de 30 dias · Acesso imediato · Pagamento seguro
-    </p>
+<!-- RED TICKER 3 -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>BÔNUS 1: SOBREMESAS ZERO AÇÚCAR</span><span class="sep">///</span>
+    <span>BÔNUS 2: BOWLS COM FRUTAS</span><span class="sep">///</span>
+    <span>BÔNUS 3: 60 SUCOS DETOX</span><span class="sep">///</span>
+    <span>BÔNUS 4: PÃES SEM GLÚTEN</span><span class="sep">///</span>
+    <span>BÔNUS 5: CARDÁPIO 4 SEMANAS</span><span class="sep">///</span>
+    <span>BÔNUS 6: GUIA DE SUBSTITUIÇÕES</span><span class="sep">///</span>
+    <span>BÔNUS 1: SOBREMESAS ZERO AÇÚCAR</span><span class="sep">///</span>
+    <span>BÔNUS 2: BOWLS COM FRUTAS</span><span class="sep">///</span>
+    <span>BÔNUS 3: 60 SUCOS DETOX</span><span class="sep">///</span>
+    <span>BÔNUS 4: PÃES SEM GLÚTEN</span><span class="sep">///</span>
+    <span>BÔNUS 5: CARDÁPIO 4 SEMANAS</span><span class="sep">///</span>
+    <span>BÔNUS 6: GUIA DE SUBSTITUIÇÕES</span><span class="sep">///</span>
+  </div>
+</div>
+
+<!-- BONUSES -->
+<section class="section-dark" id="bonus">
+  <div class="container">
+    <h2 class="sec-headline reveal" data-delay="100">ALÉM DAS<br>200 RECEITAS,<br><span class="txt-red">VOCÊ RECEBE:</span></h2>
+
+    <div class="bonus-list">
+      <div class="bonus-item reveal" data-delay="0">
+        <div class="bonus-img-wrap">
+          <img src="https://admin.docepedia.com/site/uploads/2024/01/Sobremesa-na-Taca-Mousse-Dois-Amores-1-1024x683-1.jpg" alt="Sobremesas Zero Açúcar" />
+        </div>
+        <div class="bonus-header">
+          <span class="bonus-n">B1</span>
+          <span class="bonus-free-tag">GRÁTIS</span>
+        </div>
+        <h3>Sobremesas Zero Açúcar</h3>
+        <p>As receitas que matam o desejo de comer doce sem sabotar sua alimentação.</p>
+        <p class="bonus-val"><s>R$37</s> → <strong>GRÁTIS</strong></p>
+      </div>
+      <div class="bonus-item reveal" data-delay="80">
+        <div class="bonus-img-wrap">
+          <img src="https://i.pinimg.com/736x/fb/ff/68/fbff6875911aa0430f7ce9fb7430d6f2.jpg" alt="Bowls com Frutas" />
+        </div>
+        <div class="bonus-header">
+          <span class="bonus-n">B2</span>
+          <span class="bonus-free-tag">GRÁTIS</span>
+        </div>
+        <h3>20 Receitas de Bowls com Frutas</h3>
+        <p>Mais opções para variar ainda mais durante o dia.</p>
+        <p class="bonus-val"><s>R$37</s> → <strong>GRÁTIS</strong></p>
+      </div>
+      <div class="bonus-item reveal" data-delay="160">
+        <div class="bonus-img-wrap">
+          <img src="https://i.pinimg.com/736x/d6/15/3d/d6153d3ec129d7f34d18a61db1371cdb.jpg" alt="60 Sucos Detox" />
+        </div>
+        <div class="bonus-header">
+          <span class="bonus-n">B3</span>
+          <span class="bonus-free-tag">GRÁTIS</span>
+        </div>
+        <h3>60 Sucos Detox Saborosos</h3>
+        <p>A combinação perfeita para o café da manhã — sucos que limpam o organismo.</p>
+        <p class="bonus-val"><s>R$37</s> → <strong>GRÁTIS</strong></p>
+      </div>
+      <div class="bonus-item reveal" data-delay="0">
+        <div class="bonus-img-wrap">
+          <img src="https://i.pinimg.com/736x/a6/23/3d/a6233d939cd37b36f2255ec046838e8f.jpg" alt="Pães Sem Glúten" />
+        </div>
+        <div class="bonus-header">
+          <span class="bonus-n">B4</span>
+          <span class="bonus-free-tag bonus-free-tag--new">NOVO</span>
+        </div>
+        <h3>Pães Sem Glúten da Nutri</h3>
+        <p>Pães, bolos e tapiocas sem glúten que não deixam o estômago pesado.</p>
+        <p class="bonus-val"><s>R$37</s> → <strong>GRÁTIS</strong></p>
+      </div>
+      <div class="bonus-item reveal" data-delay="80">
+        <div class="bonus-img-wrap">
+          <img src="https://hotmart.s3.amazonaws.com/product_pictures/96ed3cfa-75b5-461b-b31a-7e5980508914/Cardapiosemanal_20240911_035039_0000.png" alt="Cardápio Semanal" />
+        </div>
+        <div class="bonus-header">
+          <span class="bonus-n">B5</span>
+          <span class="bonus-free-tag bonus-free-tag--new">NOVO</span>
+        </div>
+        <h3>Cardápio Semanal Pronto — 4 Semanas</h3>
+        <p>Quatro semanas de café da manhã já montadas. É só seguir.</p>
+        <p class="bonus-val"><s>R$27</s> → <strong>GRÁTIS</strong></p>
+      </div>
+      <div class="bonus-item reveal" data-delay="160">
+        <div class="bonus-img-wrap">
+          <img src="https://i.pinimg.com/736x/4e/a6/2a/4ea62ab14f664b67a49bad6e4cc1218f.jpg" alt="Guia de Substituições" />
+        </div>
+        <div class="bonus-header">
+          <span class="bonus-n">B6</span>
+          <span class="bonus-free-tag bonus-free-tag--new">NOVO</span>
+        </div>
+        <h3>Guia de Substituições Fit</h3>
+        <p>Como transformar qualquer receita em versão saudável sem perder o sabor.</p>
+        <p class="bonus-val"><s>R$27</s> → <strong>GRÁTIS</strong></p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">nutri<span>receitas</span></div>
-    <div class="footer-tagline">200 Cafés da Manhã de Nutri — Camila Moura</div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 NutriReceitas. Todos os direitos reservados.</p>
-      <div class="footer-links">
+<div class="torn-divider torn-divider--paper"></div>
+
+<!-- PRICING -->
+<section class="section-paper" id="preco">
+  <div class="container">
+    <h2 class="sec-headline sec-headline--dark reveal" data-delay="100">TUDO O QUE<br>VOCÊ RECEBE<br><span class="txt-red">HOJE:</span></h2>
+
+    <div class="price-table reveal" data-delay="200">
+      <div class="price-row"><span>200 Cafés da Manhã em Vídeo (App)</span><span>R$97</span></div>
+      <div class="price-row"><span>Bônus #1 — Sobremesas Zero Açúcar</span><span>R$37</span></div>
+      <div class="price-row"><span>Bônus #2 — Bowls com Frutas</span><span>R$37</span></div>
+      <div class="price-row"><span>Bônus #3 — 60 Sucos Detox</span><span>R$37</span></div>
+      <div class="price-row"><span>Bônus #4 — Pães Sem Glúten</span><span>R$37</span></div>
+      <div class="price-row"><span>Bônus #5 — Cardápio 4 Semanas</span><span>R$27</span></div>
+      <div class="price-row"><span>Bônus #6 — Guia de Substituições</span><span>R$27</span></div>
+      <div class="price-total"><span>VALOR TOTAL</span><span>R$299</span></div>
+    </div>
+
+    <div class="price-offer reveal" data-delay="300">
+      <div class="price-mockup">
+        <img src="https://i.imgur.com/LivZj3P.png" alt="Mockup — Café da Manhã da Nutri" />
+      </div>
+      <p class="price-from">DE <s>R$299</s></p>
+      <div class="price-big jitter-subtle">
+        <sup>R$</sup><span>37</span>
+      </div>
+      <p class="price-install">ou 3x de R$13,35 — menos que um lanche fora de casa</p>
+
+      <a href="https://lastlink.com/p/C79AEEA56/checkout-payment/" target="_blank" rel="noopener" class="btn-primary jitter-hover">
+        QUERO MEU ACESSO AGORA — R$37 →
+      </a>
+      <p class="price-secure">🔒 PIX · CARTÃO · BOLETO · PAGAMENTO SEGURO</p>
+    </div>
+
+    <div class="objection-block reveal" data-delay="400">
+      <p class="obj-tag">// MAS ESPERA —</p>
+      <p><strong>R$37 é o que você gasta num delivery medíocre</strong> que você nem lembra o nome amanhã.</p>
+      <p>R$37 são 200 cafés da manhã diferentes. Em vídeo. Com tabela nutricional. Para o ano inteiro — sem repetir.</p>
+      <p class="obj-question">Qual dos dois vale mais para o seu corpo?</p>
+    </div>
+  </div>
+</section>
+
+<!-- RED TICKER 4 -->
+<div class="ticker-wrap">
+  <div class="ticker-track ticker-track--rev">
+    <span>GARANTIA DE 30 DIAS</span><span class="sep">///</span>
+    <span>RISCO ZERO</span><span class="sep">///</span>
+    <span>DINHEIRO DE VOLTA</span><span class="sep">///</span>
+    <span>SEM PERGUNTAS</span><span class="sep">///</span>
+    <span>SEM BUROCRACIA</span><span class="sep">///</span>
+    <span>GARANTIA DE 30 DIAS</span><span class="sep">///</span>
+    <span>RISCO ZERO</span><span class="sep">///</span>
+    <span>DINHEIRO DE VOLTA</span><span class="sep">///</span>
+    <span>SEM PERGUNTAS</span><span class="sep">///</span>
+    <span>SEM BUROCRACIA</span><span class="sep">///</span>
+  </div>
+</div>
+
+<!-- GUARANTEE -->
+<section class="section-dark">
+  <div class="container container--narrow">
+    <div class="guarantee-block reveal" data-delay="100">
+      <div class="guarantee-icon jitter-subtle">🛡️</div>
+      <h2 class="sec-headline">GARANTIA DE<br><span class="txt-red">30 DIAS.</span></h2>
+      <p>Se você abrir o app e por qualquer motivo não gostar — me manda uma mensagem e devolvemos <strong>100% do seu dinheiro.</strong> Sem pergunta, sem burocracia.</p>
+      <p class="guarantee-bold">Você não tem nada a perder. O risco é todo meu.</p>
+      <a href="#preco" class="btn-red">GARANTIR COM SEGURANÇA →</a>
+    </div>
+  </div>
+</section>
+
+<div class="torn-divider torn-divider--paper"></div>
+
+<!-- FAQ -->
+<section class="section-paper">
+  <div class="container container--narrow">
+    <h2 class="sec-headline sec-headline--dark reveal" data-delay="100">PERGUNTAS<br><span class="txt-red">&amp; RESPOSTAS.</span></h2>
+
+    <div class="faq-list">
+      <details class="faq-item reveal" data-delay="0">
+        <summary class="faq-q">As receitas têm sabor de verdade?</summary>
+        <p class="faq-a">Sim! O foco da Camila foi unir saúde com sabor real. Nada de comida sem graça — são receitas testadas e aprovadas.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="50">
+        <summary class="faq-q">São saudáveis de verdade?</summary>
+        <p class="faq-a">Todas têm tabela nutricional completa. Equilibradas e pensadas para oferecer os nutrientes que seu corpo precisa para começar bem o dia.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="100">
+        <summary class="faq-q">São fáceis de fazer?</summary>
+        <p class="faq-a">Sim! A maioria é pronta em até 10 minutos, com ingredientes simples e vídeo passo a passo. Você não precisa saber cozinhar.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="150">
+        <summary class="faq-q">Preciso de utensílios especiais?</summary>
+        <p class="faq-a">Não! Frigideira, liquidificador, colher, garfo. Só o que você já tem em casa.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="200">
+        <summary class="faq-q">Os ingredientes são caros?</summary>
+        <p class="faq-a">Não. Ingredientes acessíveis, encontrados em qualquer mercado. Sem produtos importados.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="250">
+        <summary class="faq-q">Como vou receber?</summary>
+        <p class="faq-a">Após o pagamento você recebe o acesso por e-mail e WhatsApp imediatamente. Funciona no celular, tablet e computador.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="300">
+        <summary class="faq-q">Como funciona a garantia?</summary>
+        <p class="faq-a">30 dias para testar. Se não gostar, devolvemos 100% do seu dinheiro sem perguntas e sem burocracia.</p>
+      </details>
+      <details class="faq-item reveal" data-delay="350">
+        <summary class="faq-q">Por quanto tempo vai durar esse preço?</summary>
+        <p class="faq-a">Honestidade: não sei. Esse preço pode subir a qualquer momento à medida que mais bônus são adicionados. O que eu sei é que agora você pode ter R$299 em conteúdo por R$37.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section-red">
+  <div class="container container--narrow">
+    <h2 class="sec-headline sec-headline--paper reveal" data-delay="100">SUA MANHÃ<br>PODE SER<br>DIFERENTE<br>JÁ AMANHÃ.</h2>
+    <p class="story-text story-text--paper reveal" data-delay="200">Enquanto você lê isso, outras pessoas já estão aproveitando as receitas. Não deixe a manhã de amanhã ser igual à de hoje.</p>
+    <div class="reveal" data-delay="300" style="text-align:center;margin-top:3rem">
+      <a href="#preco" class="btn-paper jitter-hover">
+        QUERO AS RECEITAS POR R$37 →
+      </a>
+      <p style="margin-top:1rem;font-family:'Courier Prime',monospace;font-size:.75rem;color:rgba(240,234,214,.5);letter-spacing:.15em;text-transform:uppercase;">🔒 GARANTIA 30 DIAS · ACESSO IMEDIATO · PAGAMENTO SEGURO</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-logo">NUTRI<em>RECEITAS</em></p>
+      <p class="footer-desc">200 Cafés da Manhã em Vídeo<br>Camila Moura · Nutricionista</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <p class="footer-col">LEGAL</p>
         <a href="#">Política de Privacidade</a>
         <a href="#">Termos de Uso</a>
+      </div>
+      <div>
+        <p class="footer-col">SUPORTE</p>
         <a href="#">Contato</a>
         <a href="#">Suporte</a>
       </div>
     </div>
   </div>
+  <div class="container footer-bottom">
+    <p>© 2025 NutriReceitas. Todos os direitos reservados.</p>
+  </div>
 </footer>
 
-<!-- ─── STICKY BAR ─── -->
+<!-- STICKY BAR -->
 <div class="sticky-bar" id="stickyBar">
-  <div class="sticky-bar-text">
-    <strong>200 Cafés da Manhã de Nutri</strong>
-    <span>Acesso imediato · Garantia de 30 dias</span>
+  <div class="sticky-text">
+    <strong>200 Cafés da Manhã em Vídeo</strong>
+    <span>Acesso imediato · Garantia 30 dias</span>
   </div>
-  <a href="#pricing" class="btn btn-yellow" style="padding:12px 24px;font-size:.88rem;white-space:nowrap;">
-    QUERO POR R$29,90 →
+  <a href="#preco" class="btn-red">
+    GARANTIR POR R$37 →
   </a>
 </div>
 
