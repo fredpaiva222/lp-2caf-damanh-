@@ -310,8 +310,10 @@ body {
 /* ── HERO MOSAIC — tamanho grande, logo abaixo da headline ── */
 .hero-mosaic { margin-bottom: 2.5rem; }
 .mosaic-inner {
-  max-width: 900px;
-  aspect-ratio: 16/9;
+  max-width: 1025px;
+  width: 1025px;
+  height: 1025px;
+  aspect-ratio: 1/1;
 }
 
 .mosaic-label {
