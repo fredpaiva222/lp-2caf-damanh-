@@ -311,8 +311,7 @@ body {
 .hero-mosaic { margin-bottom: 2.5rem; }
 .mosaic-inner {
   max-width: 1025px;
-  width: 1025px;
-  height: 1025px;
+  width: 100%;
   aspect-ratio: 1/1;
 }
 
